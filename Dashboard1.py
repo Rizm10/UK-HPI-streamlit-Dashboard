@@ -12,7 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
-
+st.set_page_config(page_title="UK Housing Dashboard", layout="wide")
 full_path = 'UK-HPI-full-file-2025-02.csv'
 sample_path = 'UK HPI sample (git).csv'
 
@@ -31,7 +31,6 @@ df = df.dropna(subset=['Date'])  # Drop rows with invalid dates
 df = df.sort_values(by='Date')
 
 # Sidebar config
-st.set_page_config(page_title="UK Housing Dashboard", layout="wide")
 st.title("UK Housing Price Dashboard")
 st.markdown("Explore the UK Housing Price Index Dashboard")
 st.sidebar.header("Filters")
