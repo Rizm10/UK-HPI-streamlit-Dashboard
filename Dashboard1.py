@@ -11,9 +11,19 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
-# Load data
-df = pd.read_csv('UK-HPI-full-file-2025-02.csv')
+full_path = 'UK-HPI-full-file-2025-02.csv'
+sample_path = 'UK HPI sample (git).csv'
+
+if os.path.exists(full_path):
+    df = pd.read_csv(full_path)
+    st.success("Loaded full dataset.")
+elif os.path.exists(sample_path):
+    df = pd.read_csv(sample_path)
+    st.warning("Loaded sample dataset (full version not found).")
+else:
+    st.error("No dataset found. Please add one to the root directory.")
 
 # Preprocessing
 df['Date'] = pd.to_datetime(df['Date'], errors='coerce', dayfirst=True)
