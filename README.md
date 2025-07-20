@@ -6,16 +6,30 @@ This project is an interactive dashboard built with **Streamlit** to explore the
 
 ---
 
-## Features
 
-- Average house price trends over time
-- Sales volume visualization
-- Property type price distribution (Flat, Terraced, Semi-Detached, Detached)
-- Region filters and multi-region comparisons
-- Sample dataset included for quick online demo
-- Hosted on Streamlit Cloud (see below)
+⸻
 
----
+🔍 Features
+	•	✅ Clean KPI Display
+Displays latest average price, sales volume, month-over-month % change, and last update timestamp in a professional layout.
+	•	📈 Price Trends Over Time
+Visualizes average house prices across selected regions, along with % monthly changes to spot market shifts.
+	•	🏘️ Property Type Analysis
+Tracks pricing trends for Detached, Semi-Detached, Terraced, and Flat property types.
+	•	🌍 Interactive Filters
+Dynamic filtering by region(s), property type(s), date range, and price range directly from the sidebar.
+	•	📊 Price Distribution Histogram
+Stacked histogram showing the distribution of house prices by property type.
+	•	⚠️ Outlier Detection
+Automatically identifies and displays potential outliers in average prices using IQR method.
+	•	🧹 Responsive Layout
+Clean chart alignment and spacing for readability — styled with GOV.UK-like aesthetics and dashboard UX principles.
+	•	⚙️ Fully Streamlit-Based
+Built using Python, Pandas, Matplotlib, Seaborn, and Streamlit — no JavaScript or external backend required.
+	•	📦 Demo Dataset Included
+Uses a real UK Housing Price Index sample dataset for easy testing and demonstration.
+	•	☁️ Deployed on Streamlit Cloud
+One-click launch with ngrok or Streamlit Cloud — fully Colab-compatible.
 
 ## Live Dashboard
 
