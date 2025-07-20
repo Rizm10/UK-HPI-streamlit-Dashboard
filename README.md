@@ -20,7 +20,7 @@ This project is an interactive dashboard built with **Streamlit** to explore the
 ## Live Dashboard
 
 Run instantly in your browser — no setup required:  
-**[Launch the Streamlit App](https://uk-hpi-app-dashboard-jbtai7vtthl9aqwwn9uthf.streamlit.app/)**
+**https://uk-hpi-app-dashboard-4hwcfrlqhrjjv9ojaqc6tv.streamlit.app**
 
 ---
 
